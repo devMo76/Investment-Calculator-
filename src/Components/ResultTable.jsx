@@ -1,4 +1,4 @@
-import { calculateInvestmentResults, formatter } from "../util/investment";
+import { formatter } from "../util/investment";
 
 export default function ReasultTable({ results }) {
   return (
@@ -13,14 +13,14 @@ export default function ReasultTable({ results }) {
         </tr>
       </thead>
       <tbody>
-        {results.map((row) => {
-          <>
+        {results.map((row) => (
+          <tr key={row.year}>
             <td>{row.year}</td>
-            <td>{row.interest}</td>
+            <td>{formatter.format(row.interest)}</td>
             <td>{formatter.format(row.valueEndOfYear)}</td>
             <td>{formatter.format(row.annualInvestment)}</td>
-          </>;
-        })}
+          </tr>
+        ))}
       </tbody>
     </table>
   );

@@ -20,7 +20,7 @@ export default function App() {
 
     setUserInput((prevInput) => ({
       ...prevInput,
-      [name]: value,
+      [name]: value === "" ? "" : Number(value),
     }));
   }
   console.log(userInput);
