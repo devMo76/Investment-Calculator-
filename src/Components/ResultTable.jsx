@@ -19,6 +19,7 @@ export default function ReasultTable({ results }) {
             <td>{formatter.format(row.interest)}</td>
             <td>{formatter.format(row.valueEndOfYear)}</td>
             <td>{formatter.format(row.annualInvestment)}</td>
+            <td>{formatter.format(row.investedCapital)}</td>
           </tr>
         ))}
       </tbody>
