@@ -10,6 +10,7 @@ export default function UserInput({ userInput, onChange }) {
               name="initialInvestment"
               value={userInput.initialInvestment}
               onChange={onChange}
+              required
             />
           </div>
           <div>
@@ -19,6 +20,7 @@ export default function UserInput({ userInput, onChange }) {
               name="annualInvestment"
               value={userInput.annualInvestment}
               onChange={onChange}
+              required
             />
           </div>
           <div>
@@ -28,6 +30,7 @@ export default function UserInput({ userInput, onChange }) {
               name="expectedReturn"
               value={userInput.expectedReturn}
               onChange={onChange}
+              required
             />
           </div>
           <div>
@@ -37,6 +40,7 @@ export default function UserInput({ userInput, onChange }) {
               name="duration"
               value={userInput.duration}
               onChange={onChange}
+              required
             />
           </div>
         </div>

@@ -16,9 +16,9 @@ export default function ReasultTable({ results }) {
         {results.map((row) => (
           <tr key={row.year}>
             <td>{row.year}</td>
-            <td>{formatter.format(row.interest)}</td>
             <td>{formatter.format(row.valueEndOfYear)}</td>
-            <td>{formatter.format(row.annualInvestment)}</td>
+            <td>{formatter.format(row.interest)}</td>
+            <td>{formatter.format(row.totalInterest)}</td>
             <td>{formatter.format(row.investedCapital)}</td>
           </tr>
         ))}
